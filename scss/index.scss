@@ -1,0 +1,50 @@
+@import 'grid';
+@import 'colors';
+@import 'typography';
+
+.pad {
+	padding: 4em 0;
+	text-align: center;
+}
+// Site Styles
+
+#announcement {
+	background-color: $color-green;
+	background-image: url(../img/green-1080.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+
+	#logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 60%;
+	}
+}
+
+// @media (min-width: and max-width:) {
+
+// }
+
+#details p {
+	font-size: 1em;
+}
+
+#map {
+	height: 50vh;
+	min-height: 600px;
+}
+
+footer {
+	text-align: center;
+	background: $color-green;
+	color: $color-white;
+	font-size: .8em;
+}

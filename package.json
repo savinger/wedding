@@ -1,0 +1,13 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Spencer and Sarah Wedding",
+  "main": "index.html",
+  "scripts": {
+    "build": "node-sass scss/index.scss css/index.css",
+    "watch": "node-sass -w scss/index.scss css/index.css"
+  },
+  "author": "Spencer Avinger <spencer.avinger@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true
+}
