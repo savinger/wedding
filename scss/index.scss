@@ -6,11 +6,9 @@
 	padding: 4em 0;
 	text-align: center;
 }
-// Site Styles
 
 #announcement {
 	background-color: $color-green;
-	background-image: url(../img/green-1080.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -19,6 +17,21 @@
 	justify-content: center;
 	text-align: center;
 	position: relative;
+
+  @media (max-width: 720px) {
+    background-image: url(../img/green-720.jpg);
+  }
+
+  @media (min-width: 721px) and (max-width: 1080px) {
+    background-image: url(../img/green-1080.jpg);
+  }
+
+  @media
+    (min-width: 1081px) and (-webkit-min-device-pixel-ratio: 2),
+    (min-width: 1081px) and (min-resolution: 192dpi)
+  {
+    background-image: url(../img/green-2x.jpg);
+  }
 
 	#logo {
 		position: absolute;
@@ -29,9 +42,12 @@
 	}
 }
 
-// @media (min-width: and max-width:) {
+.info-window {
 
-// }
+  &__title {
+    font-weight: bold;
+  }
+}
 
 #details p {
 	font-size: 1em;

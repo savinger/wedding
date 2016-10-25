@@ -1066,7 +1066,6 @@ h3 {
 
 #announcement {
   background-color: #3a534c;
-  background-image: url(../img/green-1080.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -1075,12 +1074,24 @@ h3 {
   justify-content: center;
   text-align: center;
   position: relative; }
+  @media (max-width: 720px) {
+    #announcement {
+      background-image: url(../img/green-720.jpg); } }
+  @media (min-width: 721px) and (max-width: 1080px) {
+    #announcement {
+      background-image: url(../img/green-1080.jpg); } }
+  @media (min-width: 1081px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1081px) and (min-resolution: 192dpi) {
+    #announcement {
+      background-image: url(../img/green-2x.jpg); } }
   #announcement #logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 60%; }
+
+.info-window__title {
+  font-weight: bold; }
 
 #details p {
   font-size: 1em; }
