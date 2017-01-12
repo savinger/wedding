@@ -17,12 +17,9 @@
 	justify-content: center;
 	text-align: center;
 	position: relative;
+  background-image: url(../img/green-720.jpg);
 
-  @media (max-width: 720px) {
-    background-image: url(../img/green-720.jpg);
-  }
-
-  @media (min-width: 721px) and (max-width: 1080px) {
+  @media (min-width: 721px) { //  and (max-width: 1080px)
     background-image: url(../img/green-1080.jpg);
   }
 
