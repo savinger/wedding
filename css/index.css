@@ -1100,8 +1100,27 @@ h3 {
   height: 50vh;
   min-height: 600px; }
 
+.bottom-rule {
+  position: relative; }
+  .bottom-rule:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    background: #eee;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px; }
+
 footer {
   text-align: center;
   background: #3a534c;
   color: #fff;
   font-size: .8em; }
+
+#registries img {
+  max-width: 100%; }
+  @media (max-width: 992px) {
+    #registries img {
+      max-width: 300px;
+      margin: 2em 0; } }

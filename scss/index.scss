@@ -58,9 +58,33 @@
 	min-height: 600px;
 }
 
+.bottom-rule {
+	position: relative;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		width: 600px;
+		background: #eee;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 1px;
+	}
+}
+
 footer {
 	text-align: center;
 	background: $color-green;
 	color: $color-white;
 	font-size: .8em;
+}
+
+#registries img {
+	max-width: 100%;
+
+	@media (max-width: 992px) {
+		max-width: 300px;
+		margin: 2em 0;
+	}
 }
