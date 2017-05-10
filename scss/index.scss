@@ -85,3 +85,13 @@ footer {
 		margin: 2em 0;
 	}
 }
+
+#dine,
+#do {
+  .flex-2-col {
+    @media (min-width: 721px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

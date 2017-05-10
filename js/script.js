@@ -49,9 +49,9 @@ function renderInfoWindow(params) {
         + '<div>' + params.address[1] + '</div>'
       + '</div>'
     + '</div> '
-    + '<div class="view-link">'
-      + '<a target="_blank" href="' + params.url + '">View on Google Maps</a>'
-    + '</div>'
+    // + '<div class="view-link">'
+    //   + '<a target="_blank" href="' + params.url + '">View on Google Maps</a>'
+    // + '</div>'
   + '</div>';
 }
 

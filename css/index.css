@@ -1073,11 +1073,9 @@ h3 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  position: relative; }
-  @media (max-width: 720px) {
-    #announcement {
-      background-image: url(../img/green-720.jpg); } }
-  @media (min-width: 721px) and (max-width: 1080px) {
+  position: relative;
+  background-image: url(../img/green-720.jpg); }
+  @media (min-width: 721px) {
     #announcement {
       background-image: url(../img/green-1080.jpg); } }
   @media (min-width: 1081px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1081px) and (min-resolution: 192dpi) {
@@ -1124,3 +1122,9 @@ footer {
     #registries img {
       max-width: 300px;
       margin: 2em 0; } }
+
+@media (min-width: 721px) {
+  #dine .flex-2-col,
+  #do .flex-2-col {
+    display: flex;
+    justify-content: center; } }
